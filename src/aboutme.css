@@ -7,8 +7,15 @@
     line-height: 2;
 }
 
+.textCSSclass2{
+    margin-top: 2rem;
+    line-height: 2;
+}
+
 .jourDiv{
-    padding-bottom: 7rem;
+    padding-bottom: 3rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .greyCSS{
@@ -22,6 +29,8 @@
 .carousel .carousel-item {
     height: 500px;
     width: 400px;
+    border-radius: 80px 80px 80px 80px;
+    overflow: hidden;
   }
   
   .carousel-item img {

@@ -19,7 +19,7 @@ function Aboutme() {
         </h5>
         <div className="container-fluid greyCSS">
           <div className="row">
-            <div className="col">
+            <div className="col-lg-4">
               <div
                 id="carouselExampleIndicators"
                 class="carousel slide"
@@ -80,8 +80,11 @@ function Aboutme() {
                 </a>
               </div>
             </div>
-            <div className="col">
+            <div className="col-lg-8">
+                <br />
               <h1 className='customh1'>Outside of Tech</h1>
+              <h5 className="textCSSclass2">Aside from being a developer, I am also a Pilot and an outdoor activities lover.
+              When I am not coding, I am usually out snowboarding/skiing, flying, mountain biking, hiking, riding motorcycle, etc.  </h5>
             </div>
           </div>
         </div>
