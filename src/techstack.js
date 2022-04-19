@@ -201,7 +201,7 @@ WordPress
 <br />
 <br />
 <br />
-<br />
+<hr/>
 </div>
 
 );

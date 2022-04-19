@@ -1,15 +1,19 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Navbar from './navbar.js'
-import Header from './header.js'
+import { Router, Routes, Route } from 'react-router-dom'
+import Navbar from './navbar.js';
+import Header from './header.js';
 import Techstack from './techstack.js';
+import Project from './project.js'
 
 function App() {
     return(
         <div>     
         <Navbar />
         <Header />
+        <Project />
+
         <Techstack />
+
         </div>
     )
 }
