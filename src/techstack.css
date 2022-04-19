@@ -1,0 +1,26 @@
+.stackTitle{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.catTitle{
+    margin-left: 5%;
+}
+
+.allIcon{
+    display:flex;
+    text-align: center;
+}
+
+.iconStyle{
+    width: 120px;
+    height: 120px;
+    text-align: center;
+
+}
+
+.techDiv{
+    text-align: center;
+    margin-left: 5%;
+}
+
