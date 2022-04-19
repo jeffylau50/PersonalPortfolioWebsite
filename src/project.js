@@ -20,8 +20,11 @@ function Project() {
              <p>Front End: HTML, CSS, Bootstrap, Javascript, EJS Templating Engine</p>
               <p>Back End: Node.js, Express.js, MongoDB</p>
               <p>Deployment: Heroku</p>
-              <button className="btn btn-info">View Code</button>
-              <button className="btn btn-warning ml-3">Live Demo</button>
+              <a target="_blank" href='https://github.com/jeffylau50/ExploreAmericaWebsite' ><button className="btn btn-info">View Code</button></a>
+              <a target="_blank" href='https://frozen-anchorage-09220.herokuapp.com/' ><button className="btn btn-warning ml-3">Live Demo</button></a>
+              <br/><br />
+              *Please note that the live demo link will need about 10 seconds of load time to wake up since free HeroKu hosting services put app to sleep after 30 mins of inactivity.
+
              </div>
              </div>
              <br/>
@@ -38,24 +41,48 @@ function Project() {
              <p>Front End: HTML, CSS, Bootstrap, Javascript, React.js</p>
               <p>Back End: Firebase</p>
               <p>Deployment: Heroku</p>
-              <button className="btn btn-info">View Code</button>
-              <button className="btn btn-warning ml-3">Live Demo</button>
+              <a target="_blank" href='https://github.com/jeffylau50/OnlineChatApp' ><button className="btn btn-primary">View Code</button></a>
+              <a target="_blank" href='https://orangechat1.herokuapp.com/'><button className="btn btn-danger ml-3">Live Demo</button></a>
              </div>
 
              <div class='col'>
             <img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650351106/portfolio/gif/pcDemo1_mngtii.gif'/>
 
-                 </div>
+            </div>
 
          </div>
-         <br/>     
-
+         <br/>  
          <hr/>
+   
+         <div className="row mt-5">
+         <div class='col'>
+            <img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650353438/portfolio/gif/pcDemo_fgonj8.gif'/>
+
+            </div>
+             <div class='col'>
+             <h3>Lights Out | Web Game</h3>
+             <p>Web Game built with React.js</p>
+             <b>Goal of the game is to turn off all the lights on the panel</b>
+             <br />  <br />
+             <h5>Main Feature:</h5>
+             <p>Multipe Difficulty Setting, Move Counter</p>
+             <h5>Tech Used:</h5>
+             <p>Front End: HTML, CSS, Javascript, React.js</p>
+             <p>Deployment: Heroku</p>
+             <a target="_blank" href='https://github.com/jeffylau50/LightsOutGame' ><button className="btn btn-success">View Code</button></a>
+             <a target="_blank" href='https://lights-out-2.herokuapp.com/' ><button className="btn btn-primary ml-3">Live Demo</button></a>
+             </div>
+
+            </div>
+            <br/>
+
+            <hr />
+
          <div className="row mt-5">
          <div class='col thirdrowText'>
          <h2>Responsive Mobile Design</h2>
          <br/>
-         <h5>Although both of these projects were mainly developed for the desktop web platform, mobile adaptability was also one of the main focus of these projects. 
+         <h5>Although both Explore America and Orange Chat were mainly developed for the desktop web platform, mobile adaptability was also one of the main focus of these projects. 
              Therefore, Responsive design was used in both projects. Both application should work on most mobile devices as shown below (iPhone 11 Demo)</h5>
              <br/>
          </div>
@@ -76,12 +103,11 @@ function Project() {
          <br/>
 
          <hr/>
+         
+
 
      </div>
-     <br/>
-     <br/>
-     <br/>
-     <br/>
+     
 
      </div>
     )

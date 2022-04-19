@@ -1,0 +1,39 @@
+.aboutTitle{
+    text-align: center;
+}
+
+.textCSSclass{
+    text-align: center;
+    line-height: 2;
+}
+
+.jourDiv{
+    padding-bottom: 7rem;
+}
+
+.greyCSS{
+    margin-top: 4rem;
+}
+
+.carousel{
+    width: 400px;
+    }
+
+.carousel .carousel-item {
+    height: 500px;
+    width: 400px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+      min-width: 350px;
+  }
+  
+  .customh1{
+      text-align: left;
+      margin-left: 0px;
+  }
