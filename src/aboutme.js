@@ -84,7 +84,8 @@ function Aboutme() {
                 <br />
               <h1 className='customh1'>Outside of Tech</h1>
               <h5 className="textCSSclass2">Aside from being a developer, I am also a Pilot and an outdoor activities lover.
-              When I am not coding, I am usually out snowboarding/skiing, flying, mountain biking, hiking, riding motorcycle, etc.  </h5>
+              When I am not coding, I am usually out snowboarding/skiing, flying, mountain biking, hiking, riding motorcycle, etc.
+              In addition, I am also a really huge fan of Marvel movies.  </h5>
             </div>
           </div>
         </div>

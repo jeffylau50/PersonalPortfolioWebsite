@@ -5,6 +5,7 @@ import Header from './header.js';
 import Techstack from './techstack.js';
 import Project from './project.js'
 import Aboutme from './aboutme.js'
+import Contactme from './contactme.js'
 
 function App() {
     return(
@@ -14,6 +15,7 @@ function App() {
         <Project />
         <Techstack />
         <Aboutme />
+        <Contactme />
         </div>
     )
 }

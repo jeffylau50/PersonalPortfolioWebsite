@@ -3,12 +3,13 @@ import './techstack.css'
 
 function Techstack() {
     return(
-<div>
+<div >
 
 <div>
 <h1 className='stackTitle'>Tech Stack</h1>
 </div>
 <br />
+<div>
 <h3 className='catTitle'>Front End:</h3>
 <br/> <br/>
 <div className="allIcon">
@@ -90,7 +91,6 @@ EJS</div>
 React.js</div>
 
 </div>
-
 
 
 <h3 className='catTitle mt-5'>Back End:</h3>
@@ -202,7 +202,7 @@ WordPress
 <br />
 <br />
 </div>
-
+</div>
 );
 }
 

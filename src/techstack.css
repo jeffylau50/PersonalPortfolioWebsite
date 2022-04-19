@@ -1,4 +1,6 @@
-
+.flexCSS{
+    display: flex;
+}
 
 .stackTitle{
     text-align: center;
