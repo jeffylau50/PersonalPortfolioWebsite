@@ -1,13 +1,14 @@
-import React from 'react';
-import { Router, Routes, Route } from 'react-router-dom'
+import React, { useRef, useState, useContext } from 'react';
 import Navbar from './navbar.js';
 import Header from './header.js';
 import Techstack from './techstack.js';
 import Project from './project.js'
 import Aboutme from './aboutme.js'
 import Contactme from './contactme.js'
+import Footer from './footer.js'
 
-function App() {
+function App(props) {
+
     return(
         <div>     
         <Navbar />
@@ -16,6 +17,9 @@ function App() {
         <Techstack />
         <Aboutme />
         <Contactme />
+        <Footer />
+
+      
         </div>
     )
 }

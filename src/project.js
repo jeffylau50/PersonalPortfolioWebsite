@@ -3,7 +3,7 @@ import './project.css'
 
 function Project() {
     return(
-    <div className="projectDiv">
+    <div className="projectDiv" id='project'>
      <h1 className="projectMaintitle mt-5">My Projects</h1>
      <div className="container">
 
@@ -13,7 +13,7 @@ function Project() {
              </div>
              <div class='col'>
              <h3>Explore America | Travel Website</h3>
-             <p>Full Stack Online Chat App built with React.js and Firebase</p>
+             <p>Full Stack Travel Website built with EJS, Node.js & MongoDB</p>
              <h5>Main Feature:</h5>
              <p>Full Authentication System, Cluster Map/ Mini Map, Review System, Image Upload, Edit and Delete</p>
              <h5>Tech Used:</h5>

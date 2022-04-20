@@ -3,7 +3,7 @@ import "./aboutme.css";
 
 function Aboutme() {
   return (
-    <div>
+    <div id='aboutme'>
       <div class="jumbotron jourDiv">
         <h1 class="display-4">My Journey in Tech</h1>
 
@@ -84,8 +84,9 @@ function Aboutme() {
                 <br />
               <h1 className='customh1'>Outside of Tech</h1>
               <h5 className="textCSSclass2">Aside from being a developer, I am also a Pilot and an outdoor activities lover.
-              When I am not coding, I am usually out snowboarding/skiing, flying, mountain biking, hiking, riding motorcycle, etc.
-              In addition, I am also a really huge fan of Marvel movies.  </h5>
+              When I am not coding, I am usually out snowboarding/skiing, flying, kayaking, mountain biking, hiking, riding motorcycle, etc.
+              In addition, I am also a really huge fan of Marvel movies. My favourite Marvel superhero is Captain America.
+              My favourite city is Los Angeles which also happens to be the county I am currently living in. </h5>
             </div>
           </div>
         </div>

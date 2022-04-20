@@ -1,9 +1,9 @@
 .textCSS{
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
 }
 
-.buttonCSS{
+.buttonCSS1{
     background-color: transparent ;
     color: rgb(0, 0, 0);
     border-style:none;
@@ -15,12 +15,12 @@
 
 }
 
-.buttonCSS:hover{
+.buttonCSS1:hover{
     transform: scale(1.2); 
     cursor: pointer;
 }
 
-.githubButton{
+.githubButton1{
   height: 3rem;
   width: 10rem;
   margin-left: 2%;
@@ -28,13 +28,13 @@
   filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(28deg) brightness(106%) contrast(101%);
 }
 
-.githubButton:hover{
+.githubButton1:hover{
     transform: scale(1.2); 
     cursor: pointer;
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(28deg) brightness(106%) contrast(101%);
 }
 
-.linkedinButton{
+.linkedinButton1{
   height: 9rem;
   width: 12rem;
   margin-bottom:1rem;
@@ -43,7 +43,11 @@
   filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(28deg) brightness(106%) contrast(101%);
 
 }
-.linkedinButton:hover{
+.linkedinButton1:hover{
     transform: scale(1.2); 
     cursor: pointer;
+}
+
+.textalCSS{
+    text-align: center;
 }

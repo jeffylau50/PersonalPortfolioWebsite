@@ -3,7 +3,7 @@ import './techstack.css'
 
 function Techstack() {
     return(
-<div >
+<div id='techstack' >
 
 <div>
 <h1 className='stackTitle'>Tech Stack</h1>
@@ -79,7 +79,7 @@ Bulma</div>
 <div className="techDiv">
     <img className='iconStyle' src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650338508/portfolio/TechIcon/ejs_zgam1f.png'></img>
           <br/>
-EJS</div>
+Embedded JavaScript(EJS)</div>
 
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 256 228">

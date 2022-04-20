@@ -1,8 +1,11 @@
 import React, { useContext, useState, useRef } from "react";
+import { Link } from 'react-scroll';
+import './navbar.css'
 
-function Navbar() {
+function Navbar(props) {
+
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id='top' class="navbar navbar-expand-lg navbar-light bg-light">
       <button
         class="navbar-toggler"
         type="button"
@@ -17,29 +20,29 @@ function Navbar() {
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <Link class="nav-link menuLinkCSS" to="top" smooth={true} duration={1000} >
               Home <span class="sr-only">(current)</span>
-            </a>
+            </Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Projects
-            </a>
+          <Link class="nav-link menuLinkCSS" to="project" smooth={true} duration={1000} >
+              Projects<span class="sr-only">(current)</span>
+            </Link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              Tech Stacks
-            </a>
+          <Link class="nav-link menuLinkCSS" to="techstack" smooth={true} duration={1000} >
+              Tech Stack <span class="sr-only">(current)</span>
+            </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              About Me
-            </a>
+          <li class="nav-item menuLinkCSS">
+          <Link class="nav-link" to="aboutme" smooth={true} duration={1000} >
+              About Me<span class="sr-only">(current)</span>
+            </Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Contact Me
-            </a>
+          <li class="nav-item menuLinkCSS">
+          <Link class="nav-link" to="contactme" smooth={true} duration={1000} >
+              Contact<span class="sr-only">(current)</span>
+            </Link>
           </li>
         </ul>
       </div>
