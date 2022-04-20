@@ -46,3 +46,27 @@
       text-align: left;
       margin-left: 0px;
   }
+
+  @media only screen and (max-width: 600px) {
+    
+    .carousel{
+        width: 300px;
+        }
+    
+    .carousel .carousel-item {
+        height: 400px;
+        width: 300px;
+        border-radius: 80px 80px 80px 80px;
+        overflow: hidden;
+      }
+      
+      .carousel-item img {
+          position: absolute;
+          object-fit:cover;
+          top: 0;
+          left: 0;
+          min-height: 500px;
+          min-width: 350px;
+      }
+  
+  }

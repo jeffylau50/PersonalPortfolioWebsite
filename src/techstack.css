@@ -1,5 +1,8 @@
+
+
 .flexCSS{
     display: flex;
+    flex-direction: column;
 }
 
 .stackTitle{
@@ -25,6 +28,24 @@
 
 .techDiv{
     text-align: center;
-    margin-left: 5%;
+    
+    
 }
 
+
+
+.flexRowCSS{
+        display: flex;
+        flex-direction:row;
+    }
+
+
+@media only screen and (max-width: 700px) {
+    
+    .techDiv{
+        text-align: center;
+        margin-left: 0%;
+        
+    }
+    
+  }

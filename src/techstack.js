@@ -3,16 +3,18 @@ import './techstack.css'
 
 function Techstack() {
     return(
-<div id='techstack' >
+<div id='techstack' className="container" >
 
 <div>
 <h1 className='stackTitle'>Tech Stack</h1>
 </div>
 <br />
 <div>
+
 <h3 className='catTitle'>Front End:</h3>
 <br/> <br/>
-<div className="allIcon">
+<div className="allIcon row mb-5">
+<div className="col">
 
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 256 256">
@@ -25,6 +27,9 @@ function Techstack() {
           <br/>
 Javascript
 </div>
+</div>
+<div className="col">
+
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 256 361">
             <g>
@@ -42,6 +47,8 @@ Javascript
           </svg>
           <br/>
 HTML5</div>
+</div>
+<div className="col">
 
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 256 361">
@@ -59,6 +66,8 @@ HTML5</div>
           </svg>
           <br/>
 CSS3</div>
+</div>
+<div className="col">
 
 <div className="techDiv">
 <svg height="120" viewBox="0 0 512 407.864" width="120" xmlns="http://www.w3.org/2000/svg">
@@ -66,6 +75,12 @@ CSS3</div>
      fill="#7952b3" fill-rule="evenodd"/></svg>
           <br/>
 Bootstrap</div>
+</div>
+</div>
+
+<div className="allIcon row mt-5">
+
+<div className="col">
 
 <div className="techDiv">
 <svg width="120px" height="120px" viewBox="0 0 256 373" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
@@ -75,11 +90,15 @@ Bootstrap</div>
 </svg>
           <br/>
 Bulma</div>
+</div>
+<div className="col">
 
 <div className="techDiv">
     <img className='iconStyle' src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650338508/portfolio/TechIcon/ejs_zgam1f.png'></img>
           <br/>
 Embedded JavaScript(EJS)</div>
+</div>
+<div className="col">
 
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 256 228">
@@ -89,13 +108,14 @@ Embedded JavaScript(EJS)</div>
           </svg>
           <br/>
 React.js</div>
-
+</div>
 </div>
 
 
 <h3 className='catTitle mt-5'>Back End:</h3>
 <br/> <br/>
-<div className="allIcon">
+<div className="allIcon row">
+<div className="col">
 
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 256 289">
@@ -105,7 +125,10 @@ React.js</div>
           </svg>
           <br/>
 Node.js
-</div>
+</div></div>
+
+<div className="col">
+
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 512 149" >
             <g>
@@ -114,6 +137,9 @@ Node.js
           </svg>
           <br/>
 Express.js</div>
+</div>
+
+<div className="col">
 
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 512 146">
@@ -134,6 +160,9 @@ Express.js</div>
           </svg>
           <br/>
 MongoDB</div>
+</div>
+
+<div className="col">
 
 <div className="techDiv">
 <svg xmlns="http://www.w3.org/2000/svg" height="120" viewBox="0 0 32 32" width="120"><path d="M19.62 11.558l-3.203 2.98-2.972-5.995 1.538-3.448c.4-.7 1.024-.692 1.414 0z" fill="#ffa000"/><path d="M13.445 8.543l2.972 5.995-11.97 11.135z" fill="#f57f17"/><path d="M23.123 7.003c.572-.55 1.164-.362 1.315.417l3.116 18.105-10.328 6.2c-.36.2-1.32.286-1.32.286s-.874-.104-1.207-.3L4.447 25.673z" fill="#ffca28"/><path d="M13.445 8.543l-8.997 17.13L8.455.638c.148-.78.592-.855.988-.167z" fill="#ffa000"/></svg>
@@ -142,11 +171,13 @@ Firebase</div>
 
 </div>
 
+</div>
 
 <h3 className='catTitle mt-5'>Deployment / Tools:</h3>
 <br/> <br/>
-<div className="allIcon">
 
+<div className="allIcon row">
+<div className="col">
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 256 400">
             <g>
@@ -160,6 +191,8 @@ Firebase</div>
           <br/>
 HeroKu
 </div>
+</div>
+<div className="col">
 
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 256 256">
@@ -170,6 +203,9 @@ HeroKu
           <br/>
 Git
 </div>
+</div>
+
+<div className="col">
 
 <div className="techDiv">
 <svg width={120} height={120} viewBox="0 0 256 287">
@@ -183,6 +219,9 @@ Git
           <br/>
 NPM
 </div>
+</div>
+
+<div className="col">
 
 <div className="techDiv">
 <svg width="120px" height="120px" viewBox="0 0 256 255" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
@@ -195,6 +234,8 @@ NPM
           <br/>
 WordPress
 </div>
+</div>
+
 
 </div>
 <br />

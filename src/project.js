@@ -9,7 +9,7 @@ function Project() {
 
          <div className="row customProject1">
              <div class='col'>
-             <img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650348331/portfolio/gif/EAPCdemo_gifhub.gif'/>
+             <img className='PCgif' src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650348331/portfolio/gif/EAPCdemo_gifhub.gif'/>
              </div>
              <div class='col'>
              <h3>Explore America | Travel Website</h3>
@@ -33,6 +33,10 @@ function Project() {
              <br/>
              <div className="row mt-5">
              <div class='col'>
+            <img className='PCgif' src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650351106/portfolio/gif/pcDemo1_mngtii.gif'/>
+
+            </div>
+             <div class='col'>
              <h3>Orange Chat | Online Chat App</h3>
              <p>Full Stack Online Chat App built with React.js and Firebase deployed on Heroku</p>
              <h5>Main Feature:</h5>
@@ -45,10 +49,7 @@ function Project() {
               <a target="_blank" href='https://orangechat1.herokuapp.com/'><button className="btn btn-danger ml-3">Live Demo</button></a>
              </div>
 
-             <div class='col'>
-            <img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650351106/portfolio/gif/pcDemo1_mngtii.gif'/>
-
-            </div>
+             
 
          </div>
          <br/>  
@@ -56,7 +57,7 @@ function Project() {
    
          <div className="row mt-5">
          <div class='col'>
-            <img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650353438/portfolio/gif/pcDemo_fgonj8.gif'/>
+            <img className='PCgif' src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650353438/portfolio/gif/pcDemo_fgonj8.gif'/>
 
             </div>
              <div class='col'>

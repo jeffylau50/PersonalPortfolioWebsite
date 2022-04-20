@@ -1,4 +1,14 @@
 
+
+@media only screen and (max-width: 600px) {
+    
+    .PCgif{
+        width:350px;
+        height:280px
+    }
+  
+}
+  
 .projectMaintitle{
     text-align: center;
     margin-bottom: 30px;
