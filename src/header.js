@@ -29,7 +29,7 @@ function Header() {
     </g>
 </svg></a>
 </div>
-  <div class="col-sm-12 col-md-12  col-lg-12 col-xl-4"><a target="_blank" href='https://drive.google.com/file/d/1v333XgIoK33gr6CZ1gp9V40tpEaXLeB9/view?usp=sharing'><button type='button' className="buttonCSS">🗎<b>RESUME</b></button></a></div>
+  <div class="col-sm-12 col-md-12  col-lg-12 col-xl-4"><a target="_blank" href='https://drive.google.com/file/d/1VVd7fniJO-wUT-QCOvflRnSrQMVRLaYX/view?usp=sharing'><button type='button' className="buttonCSS">🗎<b>RESUME</b></button></a></div>
   <div class="col-sm-12 col-md-12  col-lg-12 col-xl-4"><a target='_blank' href='https://linkedin.com/in/jeffy-lau-962487109'>
   <svg className='linkedinButton' width="512px" height="128px" viewBox="0 0 512 128" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
     <g>
