@@ -66,7 +66,7 @@ function Project() {
             <h5>Main Feature:</h5>
             <p>
               Real Time Messaging, Authentication System, Google Login, Icon and
-              Display Name Feature, Emoji Picker, Multipe Chat Rooms
+              Display Name Feature, Emoji Picker, Multiple Chat Rooms
             </p>
             <h5>Tech Used:</h5>
             <p>Front End: HTML, CSS, Bootstrap, Javascript, React.js</p>
