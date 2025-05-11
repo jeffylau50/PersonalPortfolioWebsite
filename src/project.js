@@ -26,7 +26,7 @@ function Project() {
               Front End: HTML, CSS, Bootstrap, Javascript, EJS Templating Engine
             </p>
             <p>Back End: Node.js, Express.js, MongoDB</p>
-            <p>Deployment: Heroku</p>
+            <p>Deployment: Render</p>
             <a
               target="_blank"
               href="https://github.com/jeffylau50/ExploreAmericaWebsite"
@@ -71,14 +71,14 @@ function Project() {
             <h5>Tech Used:</h5>
             <p>Front End: HTML, CSS, Bootstrap, Javascript, React.js</p>
             <p>Back End: Firebase</p>
-            <p>Deployment: Heroku</p>
+            <p>Deployment: Render</p>
             <a
               target="_blank"
               href="https://github.com/jeffylau50/OnlineChatApp"
             >
               <button className="btn btn-primary">View Code</button>
             </a>
-            <a target="_blank" href="https://orangechat1.herokuapp.com/">
+            <a target="_blank" href="https://onlinechatapp-2sli.onrender.com">
               <button className="btn btn-danger ml-3">Live Demo</button>
             </a>
           </div>
@@ -102,14 +102,14 @@ function Project() {
             <p>Multipe Difficulty Setting, Move Counter</p>
             <h5>Tech Used:</h5>
             <p>Front End: HTML, CSS, Javascript, React.js</p>
-            <p>Deployment: Heroku</p>
+            <p>Deployment: Render</p>
             <a
               target="_blank"
               href="https://github.com/jeffylau50/LightsOutGame"
             >
               <button className="btn btn-success">View Code</button>
             </a>
-            <a target="_blank" href="https://lights-out-2.herokuapp.com/">
+            <a target="_blank" href="https://lightsoutgame.onrender.com/">
               <button className="btn btn-primary ml-3">Live Demo</button>
             </a>
           </div>
