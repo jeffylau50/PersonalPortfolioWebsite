@@ -33,16 +33,16 @@ function Project() {
             >
               <button className="btn btn-info">View Code</button>
             </a>
-            {/*<a
+            <a
               target="_blank"
-              href="https://frozen-anchorage-09220.herokuapp.com/"
+              href="https://exploreamericawebsite.onrender.com"
             >
               <button className="btn btn-warning ml-3">Live Demo</button>
-            </a>*/}
+            </a>
             <br />
             <br />
             *Please note that the live demo link will need about 10 seconds of
-            load time to wake up since free HeroKu hosting services put app to
+            load time to wake up since free Render hosting services put app to
             sleep after 30 mins of inactivity.
           </div>
         </div>
@@ -61,7 +61,7 @@ function Project() {
             <h3>Orange Chat | Online Chat App</h3>
             <p>
               Full Stack Online Chat App built with React.js and Firebase
-              deployed on Heroku
+              deployed on Render
             </p>
             <h5>Main Feature:</h5>
             <p>
