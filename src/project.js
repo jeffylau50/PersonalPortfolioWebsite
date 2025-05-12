@@ -33,12 +33,12 @@ function Project() {
             >
               <button className="btn btn-info">View Code</button>
             </a>
-            <a
+            {/*<a
               target="_blank"
               href="https://frozen-anchorage-09220.herokuapp.com/"
             >
               <button className="btn btn-warning ml-3">Live Demo</button>
-            </a>
+            </a>*/}
             <br />
             <br />
             *Please note that the live demo link will need about 10 seconds of

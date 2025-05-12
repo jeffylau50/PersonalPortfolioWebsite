@@ -9,15 +9,16 @@ function Header() {
         <div className="textClass">
         <br />
 
-          Jeffy Lau 
+          Jeffy Lau, PMP 
           <br/>
           <br/>
 
-          Software Engineer & Project Manager
+          Software Engineer & 
+          <br/>
           <br />
-          <br />
-        
-          <span class="cursor"></span>
+          Project Manager
+          
+          <span className="cursor ml-2"></span>
           </ div>
           <br />
           <div>
