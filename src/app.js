@@ -6,6 +6,7 @@ import Project from './project.js'
 import Aboutme from './aboutme.js'
 import Contactme from './contactme.js'
 import Footer from './footer.js'
+import TimeLine from './timeline.js'
 
 function App(props) {
 
@@ -13,6 +14,7 @@ function App(props) {
         <div>     
         <Navbar />
         <Header />
+        <TimeLine />
         <Project />
         <Techstack />
         <Aboutme />

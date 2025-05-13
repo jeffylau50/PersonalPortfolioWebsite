@@ -1,0 +1,18 @@
+.timeLineBlock {
+  transition: transform 0.3s ease;}
+.timeLineBlock:hover {
+  transform: 
+    scale(1.05)
+    rotate(0.5deg)
+    perspective(500px)
+    translateZ(15px);.timeLineBlock2 {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-style: preserve-3d;}
+    }
+.timeLineBlock2 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.timeLineBlock2:hover {
+  transform: translateY(-5px) scale(1.02) rotate(1deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}

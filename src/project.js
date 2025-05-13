@@ -41,7 +41,7 @@ function Project() {
             </a>
             <br />
             <br />
-            *Please note that the live demo link will need about 10 seconds of
+            *Please note that the live demo link will need about 30-40 seconds of
             load time to wake up since free Render hosting services put app to
             sleep after 30 mins of inactivity.
           </div>

@@ -24,6 +24,11 @@ function Navbar(props) {
               Home <span class="sr-only">(current)</span>
             </Link>
           </li>
+            <li class="nav-item">
+          <Link class="nav-link menuLinkCSS" to="timeLine" smooth={true} duration={1000} >
+              TimeLine<span class="sr-only">(current)</span>
+            </Link>
+          </li>
           <li class="nav-item">
           <Link class="nav-link menuLinkCSS" to="project" smooth={true} duration={1000} >
               Projects<span class="sr-only">(current)</span>
