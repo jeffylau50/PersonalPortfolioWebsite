@@ -6,7 +6,7 @@ function Project() {
     <div className="projectDiv" id="project">
       <h1 className="projectMaintitle mt-5">My Projects</h1>
       <div className="container">
-        <div className="row customProject1">
+        <div className="row customProject1 projectBlock">
           <div class="col">
             <img
               className="PCgif"
@@ -50,7 +50,7 @@ function Project() {
 
         <hr />
         <br />
-        <div className="row mt-5">
+        <div className="row mt-5 projectBlock">
           <div class="col">
             <img
               className="PCgif"
@@ -86,7 +86,7 @@ function Project() {
         <br />
         <hr />
 
-        <div className="row mt-5">
+        <div className="row mt-5 projectBlock">
           <div class="col">
             <img
               className="PCgif"
