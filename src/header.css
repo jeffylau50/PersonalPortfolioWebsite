@@ -1,6 +1,31 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  padding-top: 80px;
+}
+
+.hero-content a,
+.hero-content button {
+  pointer-events: auto;
+}
 
 .headerCSS {
-  background-color: #000;
+  background-color: transparent;
   padding: 25px;
   font-size: 27px;
   font-weight: 100;
@@ -8,57 +33,47 @@
   animation: font-refresh-flicker 60ms infinite;
 }
 
-.textClass{
-    margin-left:20%;
+.textClass {
+  margin-left: 20%;
 }
 
-.buttonCustomCSS12{
+.buttonCustomCSS12 {
   margin-top: 5%;
   margin-bottom: 15%;
 }
 
-
-
-
-
 @media only screen and (max-width: 1200px) {
-  .textClass{
+  .textClass {
     margin-left: 3%;
     margin-right: 3%;
-}
-.headerCSS {
-  padding: 0%;
-  font-size: 20px;
-  font-weight: 100;
+  }
 
-}
-.buttonCSS{
-  margin-top: 10%;
-  margin-left:10%;
-  height:30px;
-  font-size: 2.2rem;
+  .headerCSS {
+    padding: 0%;
+    font-size: 20px;
+    font-weight: 100;
+  }
 
-}
-.githubButton{
-  height: 3rem;
-  width: 10rem;
-  margin-left: 10%;
-}
-.linkedinButton{
-  height: 9rem;
-  width: 12rem;
+  .buttonCSS {
+    margin-top: 10%;
+    margin-left: 10%;
+    height: 30px;
+    font-size: 2.2rem;
+  }
 
-  margin-left: 10%;
+  .githubButton {
+    height: 3rem;
+    width: 10rem;
+    margin-left: 10%;
+  }
 
-}
-
-
-
+  .linkedinButton {
+    height: 9rem;
+    width: 12rem;
+    margin-left: 10%;
+  }
 }
 
-
-.divCSS { display: inline-block; }
-pre { margin: 0; }
 .cursor {
   width: 8px;
   height: 16px;
@@ -67,12 +82,19 @@ pre { margin: 0; }
 }
 
 @keyframes font-refresh-flicker {
-  0% { color: #57ff57; }
-  50% { color: #57aa57; }
-  100% { color: #57ff57; }
+  0% {
+    color: #57ff57;
+  }
+  50% {
+    color: #57aa57;
+  }
+  100% {
+    color: #57ff57;
+  }
 }
 
 @keyframes cursor-blink {
-  50% { background-color: #57ff57; }
+  50% {
+    background-color: #57ff57;
+  }
 }
-
