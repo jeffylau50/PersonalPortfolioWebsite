@@ -7,16 +7,16 @@ function Footer(){
     <span class="text-light">Developed by Jeffy Lau in 2022</span>
     <br />
     <span class="text-light" style={{ fontSize: "0.75rem" }}>
-      3D model:{" "}
+      3D assets adapted from{" "}
       <a
         class="text-light"
-        href="https://sketchfab.com/3d-models/macbook-pro-m3-16-inch-2024-8e34fc2b303144f78490007d91ff57c4"
+        href="https://github.com/davidhckh/portfolio-2025"
         target="_blank"
         rel="noreferrer"
       >
-        MacBook Pro M3 16&quot; 2024
+        David Heckhoff portfolio-2025
       </a>{" "}
-      by jackbaeten (CC-BY-4.0)
+      (temporary — will be customized)
     </span>
     </div>
 </footer>

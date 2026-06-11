@@ -6,24 +6,6 @@
   overflow: hidden;
 }
 
-.hero-canvas {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  pointer-events: none;
-  padding-top: 80px;
-}
-
-.hero-content a,
-.hero-content button {
-  pointer-events: auto;
-}
-
 .headerCSS {
   background-color: transparent;
   padding: 25px;

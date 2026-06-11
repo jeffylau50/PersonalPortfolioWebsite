@@ -1,0 +1,55 @@
+.david-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: #dfd1bc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.david-preloader--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.david-preloader-svg {
+  width: 120px;
+  height: 120px;
+  transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+.david-preloader--hidden .david-preloader-svg {
+  transform: scale(0.4);
+  opacity: 0;
+}
+
+.david-preloader-rect {
+  transform-origin: bottom center;
+}
+
+.david-preloader-path {
+  fill: #3a3530;
+}
+
+.david-preloader-error {
+  margin: 0;
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: #b33;
+  text-align: center;
+  max-width: 280px;
+}
+
+.david-preloader-count {
+  margin: 0;
+  font-family: monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2a9d8f;
+  letter-spacing: 0.05em;
+}

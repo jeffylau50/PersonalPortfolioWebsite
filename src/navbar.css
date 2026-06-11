@@ -1,1 +1,8 @@
-.menuLinkCSS{cursor: pointer;}
+.navbar {
+  position: relative;
+  z-index: 100;
+}
+
+.menuLinkCSS {
+  cursor: pointer;
+}
