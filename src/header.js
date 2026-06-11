@@ -31,8 +31,8 @@ function Header() {
   <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4"><a target="_blank" href='https://github.com/jeffylau50'>
   <button className="btn btn-danger buttonCustomCSS12">GitHub</button></a>
 </div>
-  <div class="col-sm-12 col-md-12  col-lg-12 col-xl-4"><a target="_blank" href='https://drive.google.com/file/d/1xamt3pRYIknBF66Cbxztgb_IkuXH1nnR/view?usp=sharing'><button type='button' className="btn btn-warning buttonCustomCSS12">Resume</button></a></div>
-  <div class="col-sm-12 col-md-12  col-lg-12 col-xl-4"><a target='_blank' href='https://www.linkedin.com/in/jeffy-l-962487109/'>
+  <div class="col-sm-12 col-md-12  col-lg-12 col-xl-4"><a target="_blank" href='https://drive.google.com/file/d/1eUcZrgohSX3SHlNDRoHhbXU78l8z0VlO/view?usp=sharing'><button type='button' className="btn btn-warning buttonCustomCSS12">Resume</button></a></div>
+  <div class="col-sm-12 col-md-12  col-lg-12 col-xl-4"><a target='_blank' href='https://www.linkedin.com/in/jeffy-lau-pmp%C2%AE-962487109/'>
   <button className="btn btn-info buttonCustomCSS12">LinkedIn</button></a></div></div>
 </div>
 </div>

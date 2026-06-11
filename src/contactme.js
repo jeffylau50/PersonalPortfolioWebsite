@@ -12,8 +12,8 @@ function Contactme(){
         <h5 className="mb-4">Phone: +1(410)-603-0516</h5>
         <span>
           <a target="_blank" href='https://github.com/jeffylau50'><img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650325167/portfolio/pinpng.com-github-logo-png-945585_a2yupe.png' className='btn githubButton1'/></a>
-          <a target="_blank" href='https://drive.google.com/file/d/1xamt3pRYIknBF66Cbxztgb_IkuXH1nnR/view?usp=sharing'><button type='button' className="buttonCSS1">🗎<b>RESUME</b></button></a>
-          <a target='_blank' href='https://www.linkedin.com/in/jeffy-l-962487109/'><img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650326415/portfolio/LinkedIn-Logo.wine_coqaog.png' 
+          <a target="_blank" href='https://drive.google.com/file/d/1eUcZrgohSX3SHlNDRoHhbXU78l8z0VlO/view?usp=sharing'><button type='button' className="buttonCSS1">🗎<b>RESUME</b></button></a>
+          <a target='_blank' href='https://www.linkedin.com/in/jeffy-lau-pmp%C2%AE-962487109/'><img src='https://res.cloudinary.com/djgjwxdih/image/upload/v1650326415/portfolio/LinkedIn-Logo.wine_coqaog.png' 
           className='btn linkedinButton1'/></a>
           </span>
           <br />
