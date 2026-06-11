@@ -1,14 +1,9 @@
 import React from "react";
 import "./header.css";
-import LaptopCanvas from "./components/canvas/Laptop";
 
 function Header() {
   return (
     <section className="hero-section" id="hero">
-      <div className="hero-canvas">
-        <LaptopCanvas />
-      </div>
-
       <div className="hero-content">
         <div className="headerCSS">
           <div className="textClass">

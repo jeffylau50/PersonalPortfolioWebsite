@@ -1,22 +1,12 @@
 .hero-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   background-color: #000;
-  overflow: hidden;
-}
-
-.hero-canvas {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
 }
 
 .hero-content {
   position: relative;
-  z-index: 1;
-  pointer-events: none;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .hero-content a,

@@ -1,5 +1,6 @@
 import React, { useRef, useState, useContext } from 'react';
 import Navbar from './navbar.js';
+import LaptopSection from './components/LaptopSection';
 import Header from './header.js';
 import Techstack from './techstack.js';
 import Project from './project.js'
@@ -13,6 +14,7 @@ function App(props) {
     return(
         <div>     
         <Navbar />
+        <LaptopSection />
         <Header />
         <TimeLine />
         <Project />
