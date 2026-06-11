@@ -26,11 +26,12 @@ function TimeLine() {
 }
   >
 
-    <h3 className="vertical-timeline-element-title">Software Development & Management</h3>
-    <h4 className="vertical-timeline-element-subtitle mt-2 text-info">Independent Start-Up</h4>
+    <h3 className="vertical-timeline-element-title">Product Owner & Technical Business Analyst</h3>
+    <h4 className="vertical-timeline-element-subtitle mt-2 text-info">Orange County's Credit Union</h4>
 
     <p>
-       Developing the first AI driven dating app, coding core features and managing contract engineers
+    Product Vision,  Defines the product roadmap and aligns stakeholders on the "why" and "what" to ensure the team builds the right features at the right time.
+
       <br className='mt-1 mb-1'/>
 
     </p>
@@ -116,7 +117,7 @@ TikTok USDS)</h4>
 }
 
   >
-    <h3 className="vertical-timeline-element-title">Front-End Developer (Contract)</h3>
+    <h3 className="vertical-timeline-element-title">Software Engineer (Contract)</h3>
     <h4 className="vertical-timeline-element-subtitle mt-2 text-info">Community Infrastructure Investment Group</h4>
     <p>
        Building dynamic, cross-browser compatible web applications using modern JavaScript frameworks

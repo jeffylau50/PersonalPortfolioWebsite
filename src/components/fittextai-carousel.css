@@ -1,0 +1,52 @@
+.fitTextCarouselWrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 32px;
+}
+
+.fitTextCarousel {
+  width: 260px;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.fitTextCarousel .carousel-item {
+  height: auto;
+  width: 100%;
+  border-radius: 36px;
+  overflow: hidden;
+}
+
+.fitTextCarousel .carousel-item img {
+  position: static;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.fitTextCarousel .carousel-control-prev {
+  left: -28px;
+  width: auto;
+}
+
+.fitTextCarousel .carousel-control-next {
+  right: -28px;
+  width: auto;
+}
+
+.fitTextCarousel .carousel-control-prev-icon,
+.fitTextCarousel .carousel-control-next-icon {
+  filter: brightness(0);
+}
+
+@media only screen and (max-width: 600px) {
+  .fitTextCarousel {
+    width: 240px;
+  }
+
+  .fitTextCarousel .carousel-item {
+    border-radius: 32px;
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useContext, useState, useRef } from "react";
 import "./project.css";
+import FitTextAICarousel from "./components/FitTextAICarousel";
 
 function Project() {
   return (
@@ -7,6 +8,39 @@ function Project() {
       <h1 className="projectMaintitle mt-5">My Projects</h1>
       <div className="container">
         <div className="row customProject1 projectBlock">
+          <div class="col">
+            <FitTextAICarousel />
+          </div>
+          <div class="col">
+            <h3>FitTextAI | Lazy Calorie Tracker</h3>
+            <p>
+              AI-powered iOS calorie & macro tracker with a chat-based interface
+              built for people who hate traditional food logging
+            </p>
+            <h5>Main Feature:</h5>
+            <p>
+              Chat-Based Food Logging, AI Photo Recognition, Conversational
+              Portion Corrections, AI Body Fat Analysis, Apple Health Sync, Sign
+              in with Apple
+            </p>
+            <h5>Tech Used:</h5>
+            <p>Platform: iOS (React Native, Expo, Nest.JS, NeonDB)</p>
+            <p>Integrations: Apple HealthKit, StoreKit, Sign in with Apple</p>
+            <p>AI: Food identification, nutrition estimation & body composition analysis</p>
+            <p>Deployment: App Store</p>
+            <a
+              target="_blank"
+              href="https://apps.apple.com/eg/app/fittextai-lazy-calorie-tracker/id6760636835"
+            >
+              <button className="btn btn-dark">App Store</button>
+            </a>
+          </div>
+        </div>
+        <br />
+
+        <hr />
+        <br />
+        <div className="row mt-5 projectBlock">
           <div class="col">
             <img
               className="PCgif"
@@ -115,47 +149,6 @@ function Project() {
           </div>
         </div>
         <br />
-
-        <hr />
-
-        <div className="row mt-5">
-          <div class="col thirdrowText">
-            <h2>Responsive Mobile Design</h2>
-            <br />
-            <h5>
-              Although both Explore America and Orange Chat were mainly
-              developed for the desktop web platform, mobile adaptability was
-              also one of the main focus of these projects. Therefore,
-              Responsive design was used in both projects. Both application
-              should work on most mobile devices as shown below (iPhone 11 Demo)
-            </h5>
-            <br />
-          </div>
-        </div>
-
-        <div className="row">
-          <div className="col">
-            <img
-              className="mobileGif"
-              src="https://res.cloudinary.com/djgjwxdih/image/upload/v1650352518/portfolio/gif/EAmobilecompress_s3bwle.gif"
-            ></img>
-          </div>
-          <div className="col">
-            <img
-              className="mobileGif"
-              src="https://res.cloudinary.com/djgjwxdih/image/upload/v1650352746/portfolio/gif/mobileDemo1_qdzlat.gif"
-            ></img>
-          </div>
-          <div className="col">
-            <img
-              className="mobileGif"
-              src="https://res.cloudinary.com/djgjwxdih/image/upload/v1650352909/portfolio/gif/ezgif.com-gif-maker_3_l1wsjh.gif"
-            ></img>
-          </div>
-        </div>
-        <br />
-
-        <hr />
       </div>
     </div>
   );
