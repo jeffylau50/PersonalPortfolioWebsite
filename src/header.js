@@ -1,13 +1,15 @@
-import React, { useContext, useState, useRef } from "react";
+import React from "react";
 import "./header.css";
+import PongGame from "./PongGame.js";
 
 function Header() {
   return (
     <div>
       <pre>
         <div className="headerCSS">
-        <div className="textClass">
-        <br />
+          <PongGame />
+          <div className="textClass">
+          <br />
 
           Jeffy Lau, PMP 
           <br/>
@@ -19,34 +21,30 @@ function Header() {
           Project Manager
           
           <span className="cursor ml-2"></span>
-          </ div>
+          </div>
           <br />
           <div>
 
-<div className="container">
-<div className="container">
+            <div className="container">
+              <div className="container">
+                <div className="container">
+                  <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4"><a target="_blank" href='https://github.com/jeffylau50'>
+                      <button className="btn btn-danger buttonCustomCSS12">GitHub</button></a>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4"><a target="_blank" href='https://drive.google.com/file/d/1eUcZrgohSX3SHlNDRoHhbXU78l8z0VlO/view?usp=sharing'><button type='button' className="btn btn-warning buttonCustomCSS12">Resume</button></a></div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4"><a target='_blank' href='https://www.linkedin.com/in/jeffy-lau-pmp%C2%AE-962487109/'>
+                      <button className="btn btn-info buttonCustomCSS12">LinkedIn</button></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-<div className="container">
-<div class="row">
-  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4"><a target="_blank" href='https://github.com/jeffylau50'>
-  <button className="btn btn-danger buttonCustomCSS12">GitHub</button></a>
-</div>
-  <div class="col-sm-12 col-md-12  col-lg-12 col-xl-4"><a target="_blank" href='https://drive.google.com/file/d/1eUcZrgohSX3SHlNDRoHhbXU78l8z0VlO/view?usp=sharing'><button type='button' className="btn btn-warning buttonCustomCSS12">Resume</button></a></div>
-  <div class="col-sm-12 col-md-12  col-lg-12 col-xl-4"><a target='_blank' href='https://www.linkedin.com/in/jeffy-lau-pmp%C2%AE-962487109/'>
-  <button className="btn btn-info buttonCustomCSS12">LinkedIn</button></a></div></div>
-</div>
-</div>
+          </div>
         </div>
-        </div>
-
-        </div>
-
       </pre>
     </div>
   );
 }
 
 export default Header;
-
-
-
