@@ -16,7 +16,7 @@ function TimeLine() {
     height: '60px', // Default icon size
     padding: '0'    // Remove default padding
   }}    icon={<img
-              src="https://res.cloudinary.com/djgjwxdih/image/upload/v1747132029/portfolio/startup_w0hjn9.png" 
+              src="/images.jpg"
                     style={{ 
         width: '100%',
         height: '100%',
