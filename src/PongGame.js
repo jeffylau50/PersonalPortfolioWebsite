@@ -4,7 +4,10 @@ const PongGame = () => {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
   const [gameOver, setGameOver] = useState(false);
-  const [winner, setWinner] = useState('');
+  const [finalScore, setFinalScore] = useState(0);
+  const [highestScore, setHighestScore] = useState(() => {
+    return parseInt(localStorage.getItem('pongHighScore') || '0', 10);
+  });
   const gameStateRef = useRef(null);
   const animationIdRef = useRef(null);
   const dimensionsRef = useRef({ w: 0, h: 260 });
@@ -26,29 +29,29 @@ const PongGame = () => {
     const ctx = canvas.getContext('2d');
 
     // Paddles positioned inward from edges but not overlapping center text (~0-40% is text, ~60-100% is buttons)
-    const gutter = 0.08; // 8% from each edge for paddles
+    const gutter = 0.08;
     const paddleW = 12;
     const paddleH = 90;
 
     const game = {
       ball: { x: w / 2, y: h / 2, dx: 4, dy: 3, r: 7 },
+      score: 0,
       player: { 
         x: Math.round(w * gutter), 
         y: h / 2 - paddleH / 2, 
         w: paddleW, 
         h: paddleH, 
-        score: 0 
       },
       computer: { 
         x: Math.round(w * (1 - gutter) - paddleW), 
         y: h / 2 - paddleH / 2, 
         w: paddleW, 
         h: paddleH, 
-        score: 0 
       },
       playerSpeed: 4,
-      computerSpeed: 4.8,
+      computerSpeed: 6,
       active: true,
+      ballServed: false,
     };
     gameStateRef.current = game;
 
@@ -72,12 +75,14 @@ const PongGame = () => {
     parent.addEventListener('mousemove', handleMouseMove);
     parent.addEventListener('touchmove', handleTouchMove, { passive: false });
 
-    const resetBall = () => {
+    const resetBall = (goingTowardPlayer = true) => {
       game.ball.x = w / 2;
-      game.ball.y = h / 2;
-      const angle = (Math.random() * 0.8 + 0.2) * (Math.random() > 0.5 ? 1 : -1);
-      game.ball.dx = Math.cos(angle) * 4;
+      game.ball.y = h / 2 + (Math.random() - 0.5) * 60;
+      const angle = (Math.random() * 0.6 + 0.2);
+      const direction = goingTowardPlayer ? -1 : 1;
+      game.ball.dx = Math.cos(angle) * 4 * direction;
       game.ball.dy = Math.sin(angle) * 3;
+      game.ballServed = false;
     };
 
     const update = () => {
@@ -86,45 +91,56 @@ const PongGame = () => {
       game.ball.x += game.ball.dx;
       game.ball.y += game.ball.dy;
 
+      // Top/bottom wall bounce
       if (game.ball.y + game.ball.r > h || game.ball.y - game.ball.r < 0) {
         game.ball.dy = -game.ball.dy;
       }
 
+      // Player paddle hit
       if (
         game.ball.x - game.ball.r <= game.player.x + game.player.w &&
         game.ball.y >= game.player.y &&
         game.ball.y <= game.player.y + game.player.h
       ) {
-        game.ball.dx = -game.ball.dx * 1.04;
+        // Player successfully returned the ball
+        game.score++;
+        // Increase ball speed by 1.3x on each paddle hit
+        game.ball.dx = -game.ball.dx * 1.1;
+        game.ball.dy = game.ball.dy * 1.1;
         game.ball.x = game.player.x + game.player.w + game.ball.r;
       }
 
+      // Computer paddle hit — CPU ALWAYS returns the ball
       if (
         game.ball.x + game.ball.r >= game.computer.x &&
         game.ball.y >= game.computer.y &&
         game.ball.y <= game.computer.y + game.computer.h
       ) {
-        game.ball.dx = -game.ball.dx * 1.04;
+        // CPU returns: send ball back toward player, increasing speed by 1.3x
+        game.ball.dx = -game.ball.dx * 1.1;
+        game.ball.dy = game.ball.dy * 1.1;
         game.ball.x = game.computer.x - game.ball.r;
       }
 
+      // Ball passed player (left side) → game over
       if (game.ball.x - game.ball.r < 0) {
-        game.computer.score++;
-        if (game.computer.score >= 7) { game.active = false; setGameOver(true); setWinner('CPU'); }
-        resetBall();
-      } else if (game.ball.x + game.ball.r > w) {
-        game.player.score++;
-        if (game.player.score >= 7) { game.active = false; setGameOver(true); setWinner('You'); }
-        resetBall();
+        game.active = false;
+        const newHigh = Math.max(game.score, highestScore);
+        if (newHigh > highestScore) {
+          localStorage.setItem('pongHighScore', String(newHigh));
+          setHighestScore(newHigh);
+        }
+        setFinalScore(game.score);
+        setGameOver(true);
       }
 
-      const computerCenter = game.computer.y + game.computer.h / 2;
-      if (computerCenter < game.ball.y - 15) {
-        game.computer.y += game.computerSpeed;
-      } else if (computerCenter > game.ball.y + 15) {
-        game.computer.y -= game.computerSpeed;
+      // Ball passed CPU (right side) — should not happen since CPU is perfect, but safety reset
+      if (game.ball.x + game.ball.r > w) {
+        resetBall(true); // send back toward player
       }
-      game.computer.y = Math.min(h - game.computer.h, Math.max(0, game.computer.y));
+
+      // CPU instantly tracks the ball's Y position — never misses
+      game.computer.y = Math.min(h - game.computer.h, Math.max(0, game.ball.y - game.computer.h / 2));
     };
 
     const draw = () => {
@@ -170,12 +186,16 @@ const PongGame = () => {
       ctx.fillRect(game.computer.x, game.computer.y, game.computer.w, game.computer.h);
       ctx.shadowBlur = 0;
 
-      // Scores
-      ctx.font = 'bold 18px "Courier New", monospace';
-      ctx.fillStyle = 'rgba(87, 255, 87, 0.6)';
+      // Score displayed in center
+      ctx.font = 'bold 20px "Courier New", monospace';
+      ctx.fillStyle = 'rgba(87, 255, 87, 0.9)';
       ctx.textAlign = 'center';
-      ctx.fillText(`${game.player.score}`, 70, 25);
-      ctx.fillText(`${game.computer.score}`, w - 70, 25);
+      ctx.fillText(`SCORE: ${game.score}`, w / 2, 24);
+
+      // High score
+      ctx.font = '11px "Courier New", monospace';
+      ctx.fillStyle = 'rgba(87, 255, 87, 0.4)';
+      ctx.fillText(`BEST: ${highestScore}`, w / 2, 42);
     };
 
     const gameLoop = () => {
@@ -191,15 +211,14 @@ const PongGame = () => {
       parent.removeEventListener('touchmove', handleTouchMove);
       if (animationIdRef.current) cancelAnimationFrame(animationIdRef.current);
     };
-  }, []);
+  }, [highestScore]);
 
   const handleRestart = () => {
     const { w, h } = dimensionsRef.current;
     const gutter = 0.08;
     const paddleW = 12, paddleH = 90;
     const game = gameStateRef.current;
-    game.player.score = 0;
-    game.computer.score = 0;
+    game.score = 0;
     game.active = true;
     game.ball.x = w / 2;
     game.ball.y = h / 2;
@@ -210,8 +229,10 @@ const PongGame = () => {
     game.computer.y = h / 2 - paddleH / 2;
     game.computer.x = Math.round(w * (1 - gutter) - paddleW);
     setGameOver(false);
-    setWinner('');
+    setFinalScore(0);
   };
+
+  const isNewHighScore = finalScore >= highestScore && finalScore > 0;
 
   return (
     <div ref={containerRef} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}>
@@ -235,7 +256,18 @@ const PongGame = () => {
             fontFamily: '"Courier New", monospace',
           }}
         >
-          <div style={{ fontSize: '26px', marginBottom: '14px' }}>{winner} Win!</div>
+          <div style={{ fontSize: '28px', marginBottom: '8px' }}>GAME OVER</div>
+          <div style={{ fontSize: '20px', marginBottom: isNewHighScore ? '4px' : '16px' }}>
+            Score: {finalScore}
+          </div>
+          {isNewHighScore && (
+            <div style={{ fontSize: '16px', marginBottom: '16px', color: '#ffcc00' }}>
+              ★ NEW HIGH SCORE! ★
+            </div>
+          )}
+          <div style={{ fontSize: '14px', marginBottom: '16px', opacity: 0.6 }}>
+            Highest Score: {highestScore}
+          </div>
           <button onClick={handleRestart} style={{
             background: '#000', color: '#57ff57', border: '1px solid #57ff57',
             padding: '10px 24px', fontSize: '18px', cursor: 'pointer',
